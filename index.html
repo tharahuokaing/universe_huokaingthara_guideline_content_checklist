@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="km" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSE HUOKAING THARA - Content Checklist / បញ្ជីត្រួតពិនិត្យមាតិកា</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="universe_huokaingthara.jpg">
+</head>
+<body>
+
+    <!-- Holographic Scanline Overlay -->
+    <div id="holo-overlay"></div>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="logo-container">
+            <i class="fa-solid fa-list-check spin-icon"></i>
+            <h1>UNIVERSE HUOKAING THARA <span class="sub-title">បញ្ជីត្រួតពិនិត្យមាតិកា / Content Checklist</span></h1>
+        </div>
+        <div class="controls">
+            <button id="langToggleBtn" class="control-btn">🇰🇭 / EN</button>
+            <button id="themeToggleBtn" class="control-btn"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+
+        <!-- Hero Section -->
+        <section class="hero-card">
+            <div class="badge">✅ UNIVERSE HUOKAING THARA • CONTENT RELEASE CHECKLIST</div>
+            <h2 class="km">បញ្ជីត្រួតពិនិត្យមុនការផ្សព្វផ្សាយមាតិកា និងគេហទំព័រ</h2>
+            <h2 class="en">Pre-Release Content, Media & Web Readiness Checklist</h2>
+            <p class="km">
+                ប្រើប្រាស់បញ្ជីត្រួតពិនិត្យមាតិការបស់ <strong>UNIVERSE HUOKAING THARA Group</strong> ក្រោមការដឹកនាំរបស់ លោក <strong>ហួកាំង ថារ៉ា</strong> (ស្ថាបនិក និងប្រធានផ្នែកសន្តិសុខសាយប័រ និងទីផ្សារ) និងលោក <strong>សេង ឆាត</strong> (នាយក) រួមជាមួយការរួមចំណែកពីលោក <strong>ជອນ រតនៈ</strong> និងក្រុមអ្នកសរសេរកូដជំនាញ។
+            </p>
+            <p class="en">
+                Track pre-publication checks for <strong>UNIVERSE HUOKAING THARA Group</strong> under Founder <strong>Mr. Huokaing Thara</strong> (Chief of Cybersecurity & Chief of Marketing) and Director <strong>Mr. Seng Chhat</strong>, with contributions from <strong>Mr. Chorn Rothanak</strong> and our elite programmers & developers.
+            </p>
+
+            <!-- Search & Filter Bar -->
+            <div class="search-filter-bar">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="checklistSearch" placeholder="ស្វែងរកចំណុចត្រួតពិនិត្យ... / Search audio, copyright, bilingual, security...">
+                </div>
+                <div class="filter-pills">
+                    <button class="pill-btn active" data-filter="all">All / ទាំងអស់</button>
+                    <button class="pill-btn" data-filter="media">Media & AV / សំឡេង-រូបភាព</button>
+                    <button class="pill-btn" data-filter="ip">Copyright & Safety / កម្មសិទ្ធិ-សុវត្ថិភាព</button>
+                    <button class="pill-btn" data-filter="web">Web & Bilingual / ភាសា-គេហទំព័រ</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress & Bulk Actions Bar -->
+        <section class="progress-card">
+            <div class="progress-header">
+                <div>
+                    <span class="progress-label km">វឌ្ឍនភាពត្រួតពិនិត្យ:</span>
+                    <span class="progress-label en">Readiness Progress:</span>
+                    <strong id="progressText" class="accent-txt">0 / 6 (0%)</strong>
+                </div>
+                <div class="bulk-actions">
+                    <button id="checkAllBtn" class="action-btn">
+                        <i class="fa-solid fa-check-double"></i> <span class="km">ធីកទាំងអស់</span> / <span class="en">Check All</span>
+                    </button>
+                    <button id="resetAllBtn" class="action-btn reset-btn">
+                        <i class="fa-solid fa-rotate-left"></i> <span class="km">កំណត់ឡើងវិញ</span> / <span class="en">Reset</span>
+                    </button>
+                </div>
+            </div>
+            <div class="progress-track">
+                <div id="progressFill" class="progress-fill"></div>
+            </div>
+        </section>
+
+        <!-- Checklist Items Grid -->
+        <section class="checklist-section">
+            <h3 class="section-heading">
+                <i class="fa-solid fa-clipboard-check"></i>
+                <span class="km">ចំណុចត្រួតពិនិត្យមុនការផ្សព្វផ្សាយ (Release Verification Items)</span>
+                <span class="en">Release Verification Items</span>
+            </h3>
+
+            <div class="checklist-grid" id="checklistGrid">
+
+                <!-- Item 1 -->
+                <article class="check-card featured" data-cat="media" data-id="chk-01">
+                    <div class="card-top">
+                        <label class="check-label">
+                            <input type="checkbox" class="item-checkbox">
+                            <span class="chk-code">CHK-01 • MEDIA</span>
+                        </label>
+                        <span class="status-pill">REQUIRED</span>
+                    </div>
+                    <h4 class="km">ត្រួតពិនិត្យគុណភាពរូបភាព និងកម្រិតសំឡេង</h4>
+                    <h4 class="en">Verify Visual Resolution & Audio Levels</h4>
+                    <p class="km">ធានាថាវីដេអូ ភាពយន្ត វីដេអូចម្រៀង និងឈុតកម្សាន្តមានរូបភាពច្បាស់ និងសំឡេងស្មើគ្នាគ្មានសំឡេងរំខាន។</p>
+                    <p class="en">Confirm crisp visuals, balanced dialogue/music levels, and clean transitions before publishing.</p>
+                    <div class="card-footer">
+                        <span class="chk-meta"><i class="fa-solid fa-film"></i> Media & AV</span>
+                        <button class="inspect-btn"
+                            data-title="Verify Visual Resolution & Audio Levels / គុណភាពរូបភាព និងសំឡេង"
+                            data-code="CHK-01 • Media & AV"
+                            data-owner="Production & Creative Team"
+                            data-notes="Aligns with STD-01 visual clarity and audio balance standards.">
+                            <span class="km">ព័ត៌មានបន្ថែម</span> / <span class="en">Item Notes</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Item 2 -->
+                <article class="check-card" data-cat="media" data-id="chk-02">
+                    <div class="card-top">
+                        <label class="check-label">
+                            <input type="checkbox" class="item-checkbox">
+                            <span class="chk-code">CHK-02 • METADATA</span>
+                        </label>
+                        <span class="status-pill">REQUIRED</span>
+                    </div>
+                    <h4 class="km">ពិនិត្យចំណងជើង សេចក្តីសង្ខេប និងរយៈពេល</h4>
+                    <h4 class="en">Confirm Titles, Summaries & Durations</h4>
+                    <p class="km">ផ្ទៀងផ្ទាត់ឈ្មោះភាគ/បទ/រឿង ប្រភេទមាតិកា និងរយៈពេលវីដេអូឱ្យត្រឹមត្រូវទាំងស្រុង។</p>
+                    <p class="en">Double-check episode/track/film titles, category tags, and runtime metadata for accuracy.</p>
+                    <div class="card-footer">
+                        <span class="chk-meta"><i class="fa-solid fa-tags"></i> Metadata</span>
+                        <button class="inspect-btn"
+                            data-title="Confirm Titles, Summaries & Durations / ចំណងជើង និងព័ត៌មាន"
+                            data-code="CHK-02 • Metadata & Indexing"
+                            data-owner="Editorial & Catalog Desk"
+                            data-notes="Keeps catalog listings and search filters accurate across all modules.">
+                            <span class="km">ព័ត៌មានបន្ថែម</span> / <span class="en">Item Notes</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Item 3 -->
+                <article class="check-card" data-cat="ip" data-id="chk-03">
+                    <div class="card-top">
+                        <label class="check-label">
+                            <input type="checkbox" class="item-checkbox">
+                            <span class="chk-code">CHK-03 • COPYRIGHT</span>
+                        </label>
+                        <span class="status-pill">MANDATORY</span>
+                    </div>
+                    <h4 class="km">ផ្ទៀងផ្ទាត់កម្មសិទ្ធិបញ្ញា និងស្លាកសញ្ញាផ្លូវការ</h4>
+                    <h4 class="en">Validate Copyright & Official Brand Marks</h4>
+                    <p class="km">ធានាថាមាតិកា និងស្លាកសញ្ញាគោរពតាមគោលការណ៍កម្មសិទ្ធិបញ្ញារបស់ UNIVERSE HUOKAING THARA Group។</p>
+                    <p class="en">Verify asset rights, licensing clearances, and official brand mark usage before release.</p>
+                    <div class="card-footer">
+                        <span class="chk-meta"><i class="fa-solid fa-copyright"></i> Copyright & IP</span>
+                        <button class="inspect-btn"
+                            data-title="Validate Copyright & Official Brand Marks / កម្មសិទ្ធិបញ្ញា"
+                            data-code="CHK-03 • Copyright & IP"
+                            data-owner="Mr. Huokaing Thara & Management Board"
+                            data-notes="Enforces IP-CLAUSE-01 through IP-CLAUSE-03 across media and web assets.">
+                            <span class="km">ព័ត៌មានបន្ថែម</span> / <span class="en">Item Notes</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Item 4 -->
+                <article class="check-card" data-cat="ip" data-id="chk-04">
+                    <div class="card-top">
+                        <label class="check-label">
+                            <input type="checkbox" class="item-checkbox">
+                            <span class="chk-code">CHK-04 • SAFETY</span>
+                        </label>
+                        <span class="status-pill">MANDATORY</span>
+                    </div>
+                    <h4 class="km">ត្រួតពិនិត្យសុវត្ថិភាពឈុតឆាក និងភាពសមស្រប</h4>
+                    <h4 class="en">Review Scene Safety & Audience Guidelines</h4>
+                    <p class="km">ធានាថាឈុតរឿង រន្ធត់ ឬលេងសើចមានសុវត្ថិភាព មិនបង្កគ្រោះថ្នាក់ និងសមស្របសម្រាប់អ្នកទស្សនា។</p>
+                    <p class="en">Ensure horror, drama, and prank segments maintain safe execution and respectful boundaries.</p>
+                    <div class="card-footer">
+                        <span class="chk-meta"><i class="fa-solid fa-shield-halved"></i> Safety & Ethics</span>
+                        <button class="inspect-btn"
+                            data-title="Review Scene Safety & Audience Guidelines / សុវត្ថិភាពឈុតឆាក"
+                            data-code="CHK-04 • Safety & Ethics"
+                            data-owner="Production Management Board"
+                            data-notes="Reviewed with the 5 CEOs and Vice Presidents (Mr. Huo & Mr. B).">
+                            <span class="km">ព័ត៌មានបន្ថែម</span> / <span class="en">Item Notes</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Item 5 -->
+                <article class="check-card" data-cat="web" data-id="chk-05">
+                    <div class="card-top">
+                        <label class="check-label">
+                            <input type="checkbox" class="item-checkbox">
+                            <span class="chk-code">CHK-05 • BILINGUAL UI</span>
+                        </label>
+                        <span class="status-pill">VERIFIED</span>
+                    </div>
+                    <h4 class="km">សាកល្បងការប្តូរភាសា ខ្មែរ-អង់គ្លេស និងពន្លឺ</h4>
+                    <h4 class="en">Test Khmer/English Toggle & Theme Contrast</h4>
+                    <p class="km">សាកល្បងប៊ូតុងប្តូរភាសា ស្វែងរក តម្រង និងរបៀបងងឹត/ភ្លឺ លើអេក្រង់កុំព្យូទ័រ និងទូរស័ព្ទ។</p>
+                    <p class="en">Verify language switching, search/filter controls, modal dialogs, and dark/light readability.</p>
+                    <div class="card-footer">
+                        <span class="chk-meta"><i class="fa-solid fa-language"></i> Bilingual & UX</span>
+                        <button class="inspect-btn"
+                            data-title="Test Khmer/English Toggle & Theme Contrast / ភាសា និងចំណុចប្រទាក់"
+                            data-code="CHK-05 • Bilingual & UX"
+                            data-owner="Elite Programmers & Developers"
+                            data-notes="Includes contributions from Mr. Chorn Rothanak and frontend QA checks.">
+                            <span class="km">ព័ត៌មានបន្ថែម</span> / <span class="en">Item Notes</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Item 6 -->
+                <article class="check-card" data-cat="web" data-id="chk-06">
+                    <div class="card-top">
+                        <label class="check-label">
+                            <input type="checkbox" class="item-checkbox">
+                            <span class="chk-code">CHK-06 • APPROVAL</span>
+                        </label>
+                        <span class="status-pill">FINAL GATE</span>
+                    </div>
+                    <h4 class="km">ការអនុម័តចុងក្រោយមុនការដាក់ឱ្យដំណើរការ</h4>
+                    <h4 class="en">Final Sign-Off Before Public Launch</h4>
+                    <p class="km">ទទួលបានការអនុម័តចុងក្រោយពីថ្នាក់ដឹកនាំ និងត្រួតពិនិត្យតំណភ្ជាប់ទាំងអស់មុនចេញផ្សាយជាផ្លូវការ។</p>
+                    <p class="en">Confirm final leadership sign-off, asset paths, and README documentation prior to launch.</p>
+                    <div class="card-footer">
+                        <span class="chk-meta"><i class="fa-solid fa-circle-check"></i> Final Sign-Off</span>
+                        <button class="inspect-btn"
+                            data-title="Final Sign-Off Before Public Launch / ការអនុម័តចុងក្រោយ"
+                            data-code="CHK-06 • Final Sign-Off"
+                            data-owner="Mr. Huokaing Thara & Mr. Seng Chhat"
+                            data-notes="Completes the release gate for UNIVERSE HUOKAING THARA Group modules.">
+                            <span class="km">ព័ត៌មានបន្ថែម</span> / <span class="en">Item Notes</span>
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Checklist Item Modal -->
+    <div id="checklistModal" class="modal-backdrop hidden">
+        <div class="modal-card">
+            <span class="modal-badge">CHECKLIST ITEM BRIEF</span>
+            <h3 id="modalChkTitle">Checklist Item</h3>
+            <div class="modal-body">
+                <p><strong>Item ID:</strong> <span id="modalChkCode" class="accent-txt"></span></p>
+                <p><strong>Responsible:</strong> <span id="modalChkOwner"></span></p>
+                <p id="modalChkNotes" class="modal-notes"></p>
+            </div>
+            <button id="closeChecklistModal" class="control-btn full-width">
+                <span class="km">បិទផ្ទាំង</span> / <span class="en">Close</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 UNIVERSE HUOKAING THARA Group. All Rights Reserved. / រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
